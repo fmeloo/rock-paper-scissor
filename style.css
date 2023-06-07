@@ -1,0 +1,177 @@
+/* fonts
+
+font-family: 'Bebas Neue', sans-serif; title
+font-family: 'Urbanist', sans-serif;   body
+
+*/
+
+/* reset */
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, img, span, label, input, button {
+    display: block;
+}
+
+button {
+    background: none;
+    border: none;
+    font: inherit;
+}
+  
+button {
+    cursor: pointer;
+}
+  
+html {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+section {
+    padding-block: 50px;
+}
+
+h1, h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: center;
+}
+
+/* reused */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* title */
+
+.title {  
+    font-size: 75px;
+    font-weight: 900;
+}
+
+/* play choose */
+
+.play-title {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.play-option-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+}
+
+.play {
+    padding: 25px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.play img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.play-name {
+    font-size: 25px;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 900;
+}
+
+
+/* result */
+
+.result {
+    visibility: hidden;
+} 
+
+.result.active {
+    visibility: visible;
+}
+
+.players-choices-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.player-name {
+    font-size: 30px;
+}
+
+.score {
+    font-size: 30px;
+}
+
+.versus {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 150px;
+    font-weight: 900;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+
+/* final overlay */
+
+.final-overlay {
+    visibility: hidden;
+}
+
+.final-overlay.active {
+    visibility: visible;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 75px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.play-again {
+    font-family: 'Urbanist', sans-serif;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 10px;
+    margin: 15px auto;
+    background-color: yellow;
+}

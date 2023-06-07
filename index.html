@@ -4,9 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ROCK, PAPER & SCISSOR</title>
+    
+    <!-- custom js -->
+    <script src="main.js" defer></script>
+
+    <!-- custom fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Urbanist&display=swap" rel="stylesheet">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="main.js" defer></script>
+
+    <!-- title -->
+    <div class="container">
+        <h1 class="title">ROCK, PAPER & SCISSOR</h1>
+    </div>
+
+    <!-- play -->
+    <section class="play-choose">
+        <div class="container">
+            <h3 class="play-title">CHOOSE YOUR PLAY</h3>
+
+            <div class="play-option-wrapper">
+                <div class="play rock">
+                    <img src="assets/rock-play.png" alt="rock" width="100" height="100">
+
+                    <p class="play-name">ROCK</p>
+                </div>
+
+                <div class="play paper">
+                    <img src="assets/paper-play.png" alt="rock" width="100" height="100">
+
+                    <p class="play-name">PAPER</p>
+                </div>
+
+                <div class="play scissor">
+                    <img src="assets/scissor-play.png" alt="rock" width="100" height="100">
+
+                    <p class="play-name">SCISSOR</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- result -->
+    <section class="result">
+        <div class="container">
+            <div class="players-choices-container">
+                <div class="player-choose-wrapper">
+                    <h3 class="player-name">PLAYER</h3>
+                    <div class="player-choose-illustration">
+                        <img src="" alt="" width="200" height="200">
+                    </div>
+                </div>
+    
+                <p class="versus">X</p>
+    
+                <div class="npc-choose-illustration">
+                    <img src="" alt="" width="200" height="200">
+                </div>
+            </div>
+
+            <div class="score-container">
+                <div class="player-score"></div>
+                <div class="round-result"></div>
+                <div class="npc-score"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- final overlay -->
+        <div class="final-overlay">
+                <p class="final-message"></p>
+
+                <button class="play-again">PLAY AGAIN</button>
+        </div>
 </body>
 </html>
